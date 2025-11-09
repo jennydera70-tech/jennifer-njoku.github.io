@@ -1,0 +1,159 @@
+<!--
+  Jennifer Njoku - Data Analytics Portfolio
+  File: index.html
+  Instructions to deploy on GitHub Pages:
+    1. Create a new public repository named: <your-github-username>.github.io
+    2. Add this index.html to the repository root (commit & push).
+    3. GitHub Pages will serve the site at https://<your-github-username>.github.io
+    4. In the repo "Description" box (top of repo page) use the suggested short description below.
+
+  Suggested GitHub repo description (copy into the Description box):
+    "Jennifer Njoku — Data Analytics portfolio: dashboards, Power BI reports, data cleaning & reconciliation projects."
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jennifer Njoku — Data Analytics Portfolio</title>
+  <meta name="description" content="Jennifer Njoku — Data Analytics portfolio: dashboards, Power BI reports, data cleaning & reconciliation projects." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa6b2;--accent:#06b6d4;--glass: rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:linear-gradient(180deg,#071025 0%, #07142b 100%); color:#e6eef6;line-height:1.45}
+    .container{max-width:1000px;margin:36px auto;padding:20px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;color:#02121a}
+    h1{margin:0;font-size:26px}
+    p.lead{color:var(--muted);margin:8px 0 0}
+    .cta{margin-left:auto}
+    .btn{background:var(--accent);border:none;color:#022;padding:10px 14px;border-radius:10px;font-weight:600;cursor:pointer}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:26px}
+    .card{background:var(--card);padding:18px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    h2{margin:0 0 12px}
+    ul.skills{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+    ul.skills li{background:var(--glass);padding:8px 10px;border-radius:8px;color:var(--muted);font-size:13px}
+    .projects{display:grid;gap:12px}
+    .project{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+    .project h3{margin:0 0 6px;font-size:16px}
+    .project p{margin:0;color:var(--muted);font-size:14px}
+    .meta{margin-top:10px;color:var(--muted);font-size:13px}
+    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+    a.link{color:var(--accent);text-decoration:none;font-weight:600}
+    /* responsive */
+    @media (max-width:880px){.grid{grid-template-columns:1fr}.avatar{width:78px;height:78px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">JN</div>
+      <div>
+        <h1>Jennifer Njoku</h1>
+        <p class="lead">Data Analyst • Power BI Specialist • Reconciliation & Revenue Analytics</p>
+        <p class="lead" style="margin-top:6px">Captivating bio: I turn messy data into clear decisions. I design end-to-end analytics solutions — from data cleaning and validation with Power Query to elegant dashboards in Power BI that help finance and product teams spot revenue leaks, optimise operations, and measure impact.</p>
+      </div>
+      <div class="cta">
+        <a class="btn" href="#projects">View Projects</a>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section id="projects" class="card">
+          <h2>Selected Projects & Samples</h2>
+          <div class="projects">
+            <article class="project">
+              <h3>Revenue Tracker Dashboard (Power BI)</h3>
+              <p>End-to-end revenue tracking for a supermarket chain. Features: dynamic KPIs, YoY comparisons, location drill-downs, and data validation using Power Query.</p>
+              <div class="meta">Skills used: Power BI, DAX, Power Query — <a class="link" href="#sample1">Open sample</a></div>
+            </article>
+
+            <article class="project">
+              <h3>Reconciliation Analysis (Daily Bank Recs)</h3>
+              <p>Automated reconciliation report that flags unmatched transactions and provides suggested matches using fuzzy logic and key-match rules.</p>
+              <div class="meta">Skills used: Excel, Power Query, M — <a class="link" href="#sample2">Open sample</a></div>
+            </article>
+
+            <article class="project">
+              <h3>Sales & Conversion Rate Tracker</h3>
+              <p>Sales funnel dashboard for a consulting company with conversion cohorts, LTV estimates, and channel performance breakdowns.</p>
+              <div class="meta">Skills used: Excel, Power BI, SQL — <a class="link" href="#sample3">Open sample</a></div>
+            </article>
+
+            <article class="project">
+              <h3>Data Cleaning & ETL Examples</h3>
+              <p>Power Query transformations: append & merge, pivot/unpivot, handling missing values, and creating a robust date table.</p>
+              <div class="meta">Skills used: Power Query (M), Python (pandas) — <a class="link" href="#sample4">Open sample</a></div>
+            </article>
+          </div>
+
+          <!-- Mock sample details (expandable) -->
+          <section id="sample1" style="margin-top:16px">
+            <h3 style="margin:0 0 6px">Sample: Revenue Tracker — mock summary</h3>
+            <pre style="white-space:pre-wrap;background:#061123;padding:12px;border-radius:8px;color:#bcd;overflow:auto">Metrics:
+• Total Revenue (N)
+• Velo Fee Income
+• Kuda Fee Expense
+• Commission Income
+• Net Revenue
+
+Sample visuals:
+• Top-line KPIs
+• Daily revenue trend
+• Revenue by store region
+• Unmatched payments table
+
+(These are mock images / placeholders — replace with your exported PBIX or screenshots.)</pre>
+          </section>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h2>Contact & Download</h2>
+          <p style="margin:6px 0">Email: <a class="link" href="mailto:jennifer.njoku@example.com">jennifer.njoku@example.com</a></p>
+          <p style="margin:6px 0">Resume: <a class="link" href="#">Download (add link)</a></p>
+          <p style="margin:6px 0;color:var(--muted)">Tip: upload screenshots of your dashboards, and — if permitted — PBIX files in the repo (or link to a company-safe, public demo).</p>
+        </section>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h2>Skills & Tools</h2>
+          <ul class="skills">
+            <li>Power BI</li>
+            <li>Power Query (M)</li>
+            <li>DAX</li>
+            <li>Excel (advanced)</li>
+            <li>SQL</li>
+            <li>Python (pandas)</li>
+            <li>Data cleaning</li>
+            <li>ETL design</li>
+            <li>Data viz</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h2>How to use this repo</h2>
+          <ol style="color:var(--muted);padding-left:18px;margin:6px 0">
+            <li>Create a public GitHub repo named <strong>&lt;your-github-username&gt;.github.io</strong>.</li>
+            <li>Commit this index.html to the repository root.</li>
+            <li>Push changes and wait for GitHub Pages to publish (usually minutes).</li>
+            <li>In the repository page: add the short description (see top comment) and a few tags like "Power-BI", "Data-Analytics".</li>
+            <li>If you prefer a project-per-page, add folders for each project with images and small readmes.</li>
+          </ol>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h2>Resume summary (for Description box)</h2>
+          <p style="color:var(--muted);margin:0">Data Analyst with experience building revenue and reconciliation dashboards using Power BI, Power Query and Excel. Skilled in DAX, ETL, and translating finance requirements into clean, auditable reports.</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div>Built by Jennifer Njoku — Data Analytics portfolio template • Want this customised with your real projects? Reply and I'll tailor the copy and visuals.</div>
+    </footer>
+  </div>
+</body>
+</html>
